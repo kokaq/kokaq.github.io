@@ -51,9 +51,9 @@ const team = defineCollection({
 
 export const collections = {
   blog,
-  authors,
-  releases,
-  team,
-  updates,
+  // authors,
+  // releases,
+  // team,
+  // updates,
   docs: defineCollection({ schema: docsSchema() }),
 };
