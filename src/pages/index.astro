@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import KeyFeatures from "../components/KeyFeatures.astro";
+import { Github, Users, Twitter, Map, MessagesSquare } from "lucide-astro";
+import { getCollection } from "astro:content";
+
+const blogs = await getCollection("blog", ({ id }) => id !== null);
+const recentBlogs = blogs
+  .sort((a: any, b: any) => b.data.published_at - a.data.published_at)
+  .slice(0, 3);
+
+const title =
+  "kokaq is a cloud native priority queue with weight-based prioritization.";
+const description =
+  "kokaq is a distributed, cloud-native priority queue implementation, designed to solve the long-standing gap of native priority handling in cloud messaging systems. It’s built for high availability, low latency, and intelligent resource allocation — empowering mission-critical workflows with dynamic, weight-based prioritization.";
+---
+
+<Layout {title} {description}>
+  <Hero />
+  <KeyFeatures />
+  <div class="columns" style="margin-bottom: 5em;">
+    <div class="column is-7">
+      <div class="content">
+        <h2 class="title is-size-3 is-size-4-mobile">kokaq is open-source</h2>
+        <p>
+          kokaq and all of its dependent packages, libraries, and modules are open-sourced 
+          under the <a href="https://github.com/kokaq/kokaq-core/blob/main/LICENSE">MIT License</a>.
+        </p>
+        <p>
+          We're building <a href="https://github.com/kokaq">kokaq</a>
+          to be a fast, scalable and highly usable priority queue that
+          is easy to deploy and quick to integrate. We're open-sourcing it to allow the
+          community to contribute and make it better.
+        </p>
+        <p>
+          <div class="buttons">
+            <a
+              class="button is-info"
+              target="_blank"
+              href="https://github.com/orgs/kokaq/discussions"
+              title="Discuss on GitHub"
+            >
+              <span class="icon"><MessagesSquare /></span>
+              <span>Discuss on GitHub</span>
+            </a>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>

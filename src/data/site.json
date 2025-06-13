@@ -1,0 +1,46 @@
+{
+  "title": "kokaq",
+  "description": "kokaq is an open source, distributed, cloud-native priority queue implementation, designed to solve the long-standing gap of native priority handling in cloud messaging systems. It’s built for high availability, low latency, and intelligent resource allocation — empowering mission-critical workflows with dynamic, weight-based prioritization.",
+  "image": {
+    "src": "/img/kokaq-full.png",
+    "alt": "kokaq"
+  },
+  "image_tw": {
+    "src": "/img/kokaq-core.png",
+    "alt": "kokaq"
+  },
+  "featureHighlights": [
+    {
+      "title": "Native Priority Queue Support",
+      "description": "Prioritize tasks and messages based on their true importance — no workarounds or consumer hacks required."
+    },
+    {
+      "title": "Non-Discrete Priorities",
+      "description": "Fine-grained control using continuous, weight-based priority values instead of fixed levels."
+    },
+    {
+      "title": "Cloud-Native Architecture",
+      "description": "Built from the ground up on Kubernetes and other modern cloud environments, leveraging serverless and container-native workflows."
+    },
+    {
+      "title": "Low Latency & High Availability",
+      "description": "Designed to handle latency-sensitive and real-time workloads with minimal delay and strong reliability."
+    },
+    {
+      "title": "Strict Highest-Priority-First Model",
+      "description": "Ensures that the most important messages are always processed first, deterministically."
+    },
+    {
+      "title": "SLA-Aware Resource Efficiency",
+      "description": "Prevents resource waste by adjusting queue behavior based on time-bound message SLAs."
+    },
+    {
+      "title": "Service Integration Ready",
+      "description": "Seamlessly connects with Azure Functions, AWS Lambda, Cloud Functions."
+    },
+    {
+      "title": "Observability and Insights",
+      "description": "Built-in support for real-time monitoring through OpenTelemetry."
+    }
+  ]
+}

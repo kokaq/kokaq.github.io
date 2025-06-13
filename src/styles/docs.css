@@ -1,0 +1,32 @@
+/* Dark mode colors. */
+:root {
+  --sl-color-accent-low: #2c201a;        /* Quokka brown background */
+  --sl-color-accent: #6db56b;            /* Leaf green - new primary accent */
+  --sl-color-accent-high: #a6d6a2;       /* Lighter green for hover/highlights */
+  --sl-color-white: #fef3dc;             /* Creamy soft white */
+  --sl-color-gray-1: #f5f5f5;            /* Lightest text gray */
+  --sl-color-gray-2: #d1cfc7;            /* Subtitle/secondary text */
+  --sl-color-gray-3: #9c9187;            /* Dimmed UI text */
+  --sl-color-gray-4: #6e625a;            /* Border/text */
+  --sl-color-gray-5: #3b2a22;            /* Container BG */
+  --sl-color-gray-6: #2b211c;            /* Navbar BG */
+  --sl-color-black: #1a1a1a;             /* Body BG */
+  --sl-color-text-link: #6db56b;         /* Leaf green link */
+}
+
+:root[data-theme="light"] {
+  --sl-color-accent-low: #e8f3e7;        /* Soft green tint */
+  --sl-color-accent: #6db56b;            /* Leaf green */
+  --sl-color-accent-high: #3e7840;       /* Deep forest green */
+  --sl-color-white: #1a1a1a;             /* Inverted dark text */
+  --sl-color-gray-1: #2b211c;            /* Dark text area */
+  --sl-color-gray-2: #3b2a22;            /* Card/bg */
+  --sl-color-gray-3: #6e625a;            /* Label text */
+  --sl-color-gray-4: #9c9187;            /* Dim UI text */
+  --sl-color-gray-5: #d1cfc7;            /* Border hover */
+  --sl-color-gray-6: #fef3dc;            /* Background cream */
+  --sl-color-gray-7: #fffaf1;            /* Ultra light background */
+  --sl-color-black: #fef3dc;             /* Body text */
+  --sl-color-text-link: #6db56b;         /* Link green */
+}
+

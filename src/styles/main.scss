@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+$family-serif: "Fira Code", monospace;
+$family-primary: $family-serif;
+$family-secondary: "Nunito", serif;
+
+// Core Theme Colors (Inspired by Mascot)
+$quokka-brown: #b76e38;
+$quokka-dark: #5e3e2c;
+$leaf-green: #6db56b;
+$sunset-orange: #fcb064;
+$quokka-cream: #fef3dc;
+
+// Dark theme colors
+$body-size: 1em;
+$text: #f5f5f5;
+$white: #fff;
+$primary: $leaf-green; // Green is primary now
+$link: $leaf-green;
+$link-hover: lighten($leaf-green, 10%);
+$info: $sunset-orange;
+$warning: #f95e5e;
+
+// Typography Colors
+$title-color: $quokka-cream;
+$subtitle-color: lighten($quokka-dark, 20%);
+$label-color: $leaf-green;
+$label-weight: normal;
+$weight-bold: 600;
+
+// Dark theme background colors
+$body-background-color: #1a1a1a;
+$navbar-background-color: #1a1a1a;
+$navbar-box-shadow-size: 0 2px 0 0;
+$navbar-item-hover-background-color: lighten($navbar-background-color, 10%);
+$navbar-item-active-background-color: $quokka-dark;
+$navbar-item-active-color: $text;
+$navbar-box-shadow-color: $sunset-orange;
+$navbar-fixed-z: 1000;
+$navbar-item-hover-color: $white;
+$navbar-item-color: $quokka-cream;
+
+th {
+  color: $subtitle-color !important;
+}
+
+$title-color: $white;
+$subtitle-color: darken($white, 20%);
+$label-color: $primary;
+$label-weight: normal;
+$weight-bold: 600;
+
+$dimensions: 16 24 32 48 64 96 128 256 320 512;
+// Button Colors
+$button-border-color: $quokka-dark;
+$button-hover-border-color: $leaf-green;
+$button-background-color: $quokka-dark;
+$button-color: $quokka-cream;
+$button-hover-color: $white;
+$button-active-color: $white;
+$button-focus-color: $text;
+
+blockquote {
+  background-color: transparent !important;
+}
+
+pre {
+  border-radius: 1em !important;
+}
+
+// Box modifications for dark theme
+// Box / Card Styling
+.box {
+  background-color: #2c201a !important;
+  border: 1px solid #3b2a22;
+  color: $text;
+  box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $white !important;
+}
+
+pre {
+  background-color: #13100d !important;
+  color: $quokka-cream !important;
+}
+
+// Navbar modifications
+.navbar {
+  border: 0px solid #444;
+  padding: 0.5em;
+  color: $text;
+}
+
+.navbar-item {
+  color: $text;
+  border-radius: 1em;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+// // Button modifications
+// .button {
+//   background-color: $button-background-color;
+//   color: $button-color;
+//   &:hover {
+//     color: $button-hover-color;
+//   }
+// }
+
+// Topic image modifications for dark theme
+.topic-image:hover,
+.topic-image:active {
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.4),
+    0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+// Clickable div modifications
+div.clickable {
+  &.is-active {
+    background-color: #333;
+    border: 1px solid #444;
+  }
+
+  &:hover {
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+  }
+}
+
+// Banner modifications
+.banner {
+  background-color: darken($leaf-green, 15%);
+  color: $quokka-cream;
+}
+
+// Horizontal rule modifications
+hr {
+  border-bottom: 1px solid #3b2a22 !important;
+}
+
+.foot {
+  // border-radius: 1em 1em 0 0;
+  background-color: #2b211c;
+  color: $text;
+  line-height: 1.75em;
+}
+
+.foot a {
+  color: $leaf-green;
+}
+
+code {
+  background-color: #1c1c1c !important;
+  color: $leaf-green !important;
+  padding: 0.5em !important;
+}
+
+img.hero{
+  height: 300px;
+  width: 300px;
+}
+
+// ... existing code ...
+
+@import "../../node_modules/bulma/bulma.sass";

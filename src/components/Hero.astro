@@ -1,0 +1,54 @@
+---
+import { Github, Book } from "lucide-astro";
+---
+
+<div style="margin-bottom: 5em;">
+  <div class="columns content">
+    <!-- Koka Mascot -->
+    <div class="column is-narrow is-hidden-mobile">
+      <img
+        src="https://github.com/kokaq/.github/raw/main/kokaq-full.png"
+        alt="Quokka Mascot"
+        class="hero"
+      />
+      <div class="is-hidden-tablet" style="padding: 2em 0;"></div>
+    </div>
+
+    <!-- Banner -->
+    <div class="column">
+      <div>
+        <h1 style="margin-top:36px" class="title is-size-1 is-size-2-mobile">
+          kokaq
+        </h1>
+        <p>
+          kokaq is an open source, distributed, cloud-native priority queue
+          implementation, designed to solve the long-standing gap of native
+          priority handling in cloud messaging systems. It’s built for high
+          availability, low latency, and intelligent resource allocation —
+          empowering mission-critical workflows with dynamic, weight-based
+          prioritization.
+        </p>
+        <div class="buttons">
+          <a href="/get-started/installation/" class="button is-primary">
+            <strong>Get Started →</strong>
+          </a>
+          <a
+            class="button"
+            target="_blank"
+            href="https://github.com/kokaq"
+            title="kokaq source code"
+          >
+            <span class="icon"><Github /></span>
+            <span>{`GitHub`}</span>
+          </a>
+          <a class="button" href="/commands/get/" title="kokaq documentation">
+            <span class="icon"><Book /></span>
+            <span>Documentation</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
