@@ -36,11 +36,7 @@ export default defineConfig({
         {
           label: "SDK",
           autogenerate: { directory: "sdk" },
-        },
-        {
-          label: "Commands",
-          autogenerate: { directory: "commands" },
-        },
+        }
       ],
     }),
   ],
