@@ -13,6 +13,15 @@ const { title, description, img, blog, video, session, JSONLD } = Astro.props;
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
   <title>{title}</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QE99XE5TP4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-QE99XE5TP4');
+  </script>
   <meta name="description" content={description} />
   <Seo {title} {description} {img} {blog} {session} {video} {JSONLD} />
 </head>
